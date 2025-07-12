@@ -1,0 +1,160 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #232526, #414345); /* Dark gradient */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffffcc;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Game container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 60vmin;
+  height: 60vmin;
+}
+
+/* Game boxes */
+.box {
+  background-color: #2e2e2e;
+  border: 2px solid #555;
+  border-radius: 1rem;
+  font-size: 3rem;
+  color: #fdd835;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  animation: pop 0.3s ease-in-out;
+}
+
+.box:hover {
+  background-color: #3a3a3a;
+  transform: scale(1.05);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Buttons */
+#reset-btn,
+#new-btn {
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  background-color: #fdd835;
+  color: #111;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  background-color: #fff176;
+  transform: scale(1.05);
+}
+
+/* Message styles */
+.msg-container {
+  margin-top: 2rem;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#msg {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4caf50;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Hide class to toggle visibility */
+.hide {
+  display: none;
+}
+
+/* Winning box style (optional if you highlight) */
+.winning-box {
+  background-color: #81c784 !important;
+  transition: background-color 0.5s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .game {
+    width: 90vmin;
+    height: 90vmin;
+    gap: 0.75rem;
+  }
+
+  .box {
+    font-size: 2.5rem;
+  }
+
+  #reset-btn,
+  #new-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  #msg {
+    font-size: 1.5rem;
+  }
+}
